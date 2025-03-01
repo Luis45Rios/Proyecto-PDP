@@ -3,25 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../Estilos globales/global.css">
+    <link rel="stylesheet" href="../Estilos globales/index.css">
     <title>Papelería Dos Pinos</title>
 </head>
 <body>
-    <div class="contenedor2">
-        <div>
-            <img  class="logo" src="images/Logotipo papelería ilustrado azul.png">
-        </div>
-        <div class="menu">
-            <ul class="lista">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Introducción</a></li>
-                <li><a href="#">Productos</a></li>
-            </ul>
-        </div>
-        <!-- <div class="nombre-empresa">    
-            <h1>Papeleria "DOS PINOS"</h1>
-        </div> -->
-    </div>
+    <div id="navbar"></div>
+
+    <script>
+        fetch('barraNavegacion.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
     <div class="introduccion">    
         <p>Tu destino para:<br>
             📚 Útiles Escolares<br>
@@ -34,12 +29,27 @@
         <h2>Acerca de Nosotros</h2>
         <div id="acerca">
             <p class="acerca-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, quidem? Cum amet ex iure non ad fugit perspiciatis quidem qui, iusto nihil dicta labore dolores accusantium autem, aliquam debitis, dolore optio voluptatem cumque totam atque consectetur sunt praesentium dolorum? Modi quae ut delectus repellat pariatur, sit voluptates asperiores quidem nulla? Ipsa soluta quam minus iure doloribus. Doloribus unde quam obcaecati alias. Quod tempore iste voluptas? In qui quasi molestiae, deserunt dicta necessitatibus id quia eius aspernatur, fugit exercitationem ipsum blanditiis minus nisi iure labore et. Sed laboriosam, quasi aperiam in harum corrupti, cumque modi ad rem tempora saepe numquam! Quos?</p>
-            <img class="imagen-papeleria" src="images/Papeleria.jpeg" width="300px">
+            <img class="imagen-papeleria" src="" width="300px">
+        </div>
+    </div>
+    <div id="productos-destacados">
+        <div class="cuaderno">
+            <img src="../img/c_cosido-removebg-preview.png" width="175px">
+            <p>Cuadernos Cosido a Cuadros 100H</p> <br>
+            <p>Precio: $1.35</p>
+        </div>
+        <div class="libreta">
+            <img src="../img/libreta_grand-removebg-preview.png" width="175px">
+            <p>Libreta grande  a Cuadros 100H</p> <br>
+            <p>Precio: $1.15</p>
         </div>
     </div>
     <div class="botones">
-        <button class = "hacer-compra">Hacer compra</button>
+        <button id = "hacerCompra">Realizar Compras</button>
         <button class = "ver-compra">Ver compras</button>
     </div>
+
+    <script src="../script/scripts.js"></script>
+
 </body>
 </html>

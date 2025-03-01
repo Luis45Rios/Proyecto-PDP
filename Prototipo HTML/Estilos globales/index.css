@@ -1,0 +1,146 @@
+.introduccion{
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+.acerca {
+    padding: 20px;
+    margin: 25px auto;
+    background: #1C542D;
+    color: yellowgreen;
+    border-radius: 10px;
+    max-width: 800px;
+
+}
+
+.acerca h2 {
+    padding-bottom: 15px;
+    color: rgb(195, 216, 5);
+    text-align: left;
+}
+
+#acerca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#acerca .imagen-papeleria {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+#productos-destacados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+    background: yellowgreen;
+    padding: 20px;
+    border-radius: 10px;
+}
+#productos-destacados div {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+}
+
+#productos-destacados img {
+    width: 100%;
+    max-width: 175px;
+}
+
+.botones {
+   display: flex;
+   justify-content: center;
+   margin: 30px; 
+   gap: 100px;
+}
+
+#hacerCompra .ver-compra {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+#hacerCompra {
+    background: yellowgreen;
+    width: 150px;
+    height: 35px;
+}
+
+#hacerCompra:hover {
+    background: darkolivegreen;
+}
+
+.ver-compra {
+    background: green;
+    width: 150px;
+    height: 35px;
+}
+
+.ver-compra:hover {
+    background: darkgreen;
+}
+
+.boton-comprar {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+}
+
+.boton-comprar:hover {
+    background-color: darkgreen;
+}
+
+@media (max-width:768px) {
+    .contenedor2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        height: 70px;
+        margin-bottom: 10px;
+    }
+
+    .lista {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .introduccion {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    #productos-destacados {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #productos-destacados div {
+        width: 80%;
+    }
+}

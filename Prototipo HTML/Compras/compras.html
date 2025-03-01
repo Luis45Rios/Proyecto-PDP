@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Estilos globales/global.css">
+    <link rel="stylesheet" href="../Estilos globales/compras.css">
+    <title>Compras</title>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <script>
+        fetch('../Inicio/barraNavegacion.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+    <div class="contenedor-global">
+        <h1>¡Bienvenido a la página de contacto!</h1>
+        <form action="" method="get">
+            <label for="">Correo:</label>
+            <input type="text" placeholder="Escriba aqui su correo">
+            <label for="">Mensaje:</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Escriba aquí su mensaje"></textarea>
+        </form>
+
+        <p>Aquí puedes encontrar nuestra información.</p>
+    
+        <a href="../Inicio/index.html">
+            <button class="volver-inicio">Volver a la página principal</button>
+        </a>
+    </div>
+</body>
+</html>

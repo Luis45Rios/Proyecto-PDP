@@ -1,0 +1,20 @@
+.contenedor-global {
+    background: yellowgreen;
+    color: #003c00;
+    padding: 30px;
+}
+
+.contenedor-global h1 {
+    padding: 15px;
+    text-align: center;
+}
+
+.contenedor-global button{
+    margin-top: 20px;
+}
+
+.volver-inicio {
+    width: 350px;
+    height: 30px;
+    background: #ff4137;
+}
